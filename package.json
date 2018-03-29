@@ -1,0 +1,44 @@
+{
+  "name": "jaynes.me",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Chris Jaynes <chris@jaynes.me>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production",
+    "clean": "rm -rf .public",
+    "deploy": "yarn clean && yarn build && yarn static && yarn stacks syncBucket",
+    "dev": "webpack-dev-server --config webpack.config.dev.js",
+    "lint": "eslint .",
+    "static": "mkdir -p .public && cp -r static/* .public"
+  },
+  "devDependencies": {
+    "@yocode/stacks": "^1.0.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-plugin-vue": "^4.4.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.0.6",
+    "html-webpack-template": "^6.1.0",
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.20.3",
+    "vue-loader": "^14.2.1",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.2.0",
+    "webpack-bundle-analyzer": "^2.11.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-closure-compiler": "^2.1.6",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "regenerator-runtime": "^0.11.1",
+    "vue": "^2.5.16",
+    "vuex": "^3.0.1",
+    "vuex-router": "^1.1.2"
+  }
+}

@@ -1,0 +1,15 @@
+.flow(@direction: column; @wrap: nowrap; @justify: flex-start; @align: center){
+  display: flex;
+  flex-direction: @direction;
+  align-items: @align;
+  flex-wrap: @wrap;
+  justify-content: @justify;
+}
+
+.flow-col(@wrap: nowrap; @justify: flex-start) {
+  .flow(column; @wrap; @justify);
+}
+
+.flow-row(@wrap: nowrap, @justify: flex-start) {
+  .flow(row; @wrap; @justify);
+}

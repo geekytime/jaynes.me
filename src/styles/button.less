@@ -1,0 +1,43 @@
+@import "./colors.less";
+@import "./elevation.less";
+
+.button:not(.flat) {
+  display: inline-block;
+  padding: .5em 1em;
+  background-color: @scd3;
+  border-radius: 4px;
+  color: white;
+  text-transform: uppercase;
+
+  &:visited {
+    color: white;
+  }
+
+  &:hover {
+    .elevation-2;
+    background-color: @scd2;
+  }
+
+  &:active {
+    .elevation-0;
+    background-color: @scd1;
+  }
+}
+
+.button.flat {
+  display: inline-block;
+  padding: .5em 1em;
+  border-radius: 4px;
+  color: @scd2;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  &:hover {
+    background-color: @scl4;
+  }
+
+  &:active {
+    background-color: @scl3;
+  }
+
+}

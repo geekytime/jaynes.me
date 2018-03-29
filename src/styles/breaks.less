@@ -1,0 +1,45 @@
+.break(@min-width; @max-width; @rules) {
+  @media only screen and (min-width:@min-width) and (max-width: @max-width){
+    @rules();
+  }
+}
+
+.break480(@rules) {
+  .break(0px, 480px, @rules);
+}
+
+.break600(@rules) {
+  .break(481px, 600px, @rules);
+}
+
+.break840(@rules) {
+  .break(601px, 840px, @rules);
+}
+
+.break960(@rules) {
+  .break(841px, 960px, @rules);
+}
+
+.break1280(@rules) {
+  .break(961px, 1280px, @rules);
+}
+
+.break1440(@rules) {
+  .break(1281px, 1440px, @rules);
+}
+
+.break1600(@rules) {
+  .break(1441px, 1600px, @rules);
+}
+
+.break1920(@rules) {
+  .break(1601px, 1920px, @rules);
+}
+
+.break2240(@rules) {
+  .break(1921px, 2240px, @rules);
+}
+
+.break2600(@rules) {
+  .break(2241px, 2600px, @rules);
+}

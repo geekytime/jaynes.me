@@ -1,0 +1,30 @@
+@import "./colors.less";
+@import "./elevation.less";
+
+.contact-icon(@color; @scale: .8) {
+  background-color: @pcd4;
+  border-radius: 50%;
+  padding: 5px;
+  box-sizing: content-box;
+
+  svg {
+    fill: @pcl4;
+    transform: scale(@scale);
+  }
+
+  &:hover {
+    background-color: white;
+    padding: 0px;
+    border: 5px solid @color;
+    .elevation-2;
+
+    svg {
+      fill: @color;
+    }
+  }
+
+  &:active {
+    .elevation-0;
+    filter: invert(100%);
+  }
+}
