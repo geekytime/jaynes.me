@@ -37,7 +37,7 @@ export default {
 .page section.projects {
   text-align: center;
 
-  & > h2, .button {
+  & > h2, .more .button {
     margin-top: 2em;
     margin-bottom: 2em;
   }
