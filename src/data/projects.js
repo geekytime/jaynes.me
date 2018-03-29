@@ -1,4 +1,15 @@
 export default [{
+  id: "vuex-router",
+  year: "2018",
+  type: "opensource",
+  name: "vuex-router",
+  techs: ["vue", "vuex", "less", "webpack", "babel"],
+  description:"Move your app's location state into your Vuex store. Allows super-easy page-based routing with built-in slide transitions. (Used on this site.)",
+  links: [{
+    to: "https://github.com/geekytime/vuex-router",
+    text:"View Source"
+  }]
+},{
   id: "sf-soa",
   year: "2018",
   type: `statefarm`,

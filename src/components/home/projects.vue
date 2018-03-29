@@ -21,7 +21,7 @@ export default {
     ProjectList
   },
   data () {
-    const recent = ["sf-soa", "count", "tiny-heap", "yocode"]
+    const recent = ["vuex-router", "count", "tiny-heap", "yocode"]
     return {
       projects: projects.filter((p) => {
         return recent.includes(p.id)
