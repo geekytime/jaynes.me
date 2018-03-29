@@ -1,12 +1,15 @@
+import projects from "./modules/projects.js"
+import { router } from "vuex-router"
 import Vue from "vue"
 import Vuex from "vuex"
-import { router } from "vuex-router"
+
 
 Vue.use(Vuex)
 
 const createStore = () => {
   const store = new Vuex.Store({
     modules: {
+      projects,
       router
     },
     strict: true

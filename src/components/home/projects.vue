@@ -20,12 +20,9 @@ export default {
     Link,
     ProjectList
   },
-  data () {
-    const recent = ["vuex-router", "count", "tiny-heap", "yocode"]
-    return {
-      projects: projects.filter((p) => {
-        return recent.includes(p.id)
-      })
+  computed: {
+    projects () {
+      return this.$store.getters["projects/featured"]
     }
   }
 }

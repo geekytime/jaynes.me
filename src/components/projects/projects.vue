@@ -14,7 +14,6 @@ import Footer from "../footer.vue"
 import Link from "../link.vue"
 import ProjectList from "../project-list.vue"
 import ProjectsFooter from "./projects-footer.vue"
-import projects from "../../data/projects.js"
 
 export default {
   components: {
@@ -26,7 +25,7 @@ export default {
   },
   data () {
     return {
-      projects
+      projects: this.$store.state.projects.projects
     }
   },
   methods: {
