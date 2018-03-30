@@ -13,12 +13,16 @@ html, body, h1,h2,h3,h4,h5,h6,ul,li {
 
 a {
   text-decoration: none;
-  color: inherit;
-}
+  color: @scd1;
 
-a:visited {
-  text-decoration: none;
-  color: inherit;
+  &:visited {
+    text-decoration: none;
+    color: @scd1;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 body {

@@ -149,20 +149,6 @@ export default {
     img {
       width: 100%;
     }
-
-    a {
-      text-decoration: none;
-      color: @scd1;
-    }
-
-    a:visited {
-      text-decoration: none;
-      color: @scd1;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
   }
 
   .background ul {
