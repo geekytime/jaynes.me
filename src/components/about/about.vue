@@ -12,9 +12,40 @@
         I work out of my home office in Bloomington, IL.
       </p>
       <p>
-        When I'm not working, I like to read, run, play games, and spend time with my family.
+        When I'm not working, you'll most likely find me reading, listening to
+        music, and hanging out with my family. If I'm outside, I'm probably
+        running, hiking, or playing <a href="https://en.wikipedia.org/wiki/Ultimate_%28sport%29">Ultimate</a>.
       </p>
       <img src="/family.jpg" />
+    </div>
+
+    <Divider />
+
+    <div class="philosophy">
+      <h1>My Team Philosophy</h1>
+      <p>
+        <i>(Presented in a style that may seem strangely familiar…)</i>
+      </p>
+      <p>
+        My teammates and I have tried many different ways of
+        developing software. Through this work, I have come to value:
+      </p>
+      <p>
+        <b>Peer reviews</b>
+        <span>over code quality metrics</span>
+      </p>
+      <p>
+        <b>Continuous delivery</b>
+        <span>over artificial deadlines</span>
+      </p>
+      <p>
+        <b>Daily status check-ins</b>
+        <span>over detailed planning sessions</span>
+      </p>
+      <p>
+        <b>A pragmatic testing mindset</b>
+        <span>over dogmatic testing processes</span>
+      </p>
     </div>
 
     <Divider />
@@ -109,24 +140,44 @@ export default {
     color: @pcd3;
   }
 
-  & > .background, .technology, .about-footer {
+  & > .background, .philosophy, .technology, .about-footer {
     margin: 0 auto;
     max-width: 35em;
     padding-left: 1em;
     padding-right: 1em;
 
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-
-      li {
-        flex: 0 0 50%;
-      }
-    }
-
     img {
       width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: @scd1;
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: @scd1;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .background ul {
+    text-align: left;
+    li {
+      list-style-type: circle;
+    }
+  }
+
+  .technology ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      flex: 0 0 50%;
     }
   }
 
