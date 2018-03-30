@@ -35,6 +35,7 @@ export default {
     text-align: left;
     max-width: 50em;
     margin: 0 auto;
+    padding: 0em 1em;
     .flow-col;
 
     .value {
@@ -50,6 +51,10 @@ export default {
         img {
           height: 8em;
         }
+      }
+
+      .text {
+        padding-left: 1em;
       }
 
       h2 {
