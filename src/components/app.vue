@@ -17,6 +17,9 @@
       <Page name="contact">
         <Contact />
       </Page>
+      <Page name="four-zero-four">
+        <FourZeroFour />
+      </Page>
     </Pages>
   </div>
 </template>
@@ -25,6 +28,7 @@
 import About from "./about/about.vue"
 import Blog from "./blog.vue"
 import Contact from "./contact/contact.vue"
+import FourZeroFour from "./four-zero-four.vue"
 import Header from "./header.vue"
 import Home from "./home/home.vue"
 import { Page } from "vuex-router"
@@ -36,6 +40,7 @@ export default {
     About,
     Blog,
     Contact,
+    FourZeroFour,
     Header,
     Home,
     Page,

@@ -137,5 +137,7 @@ export default {
       .size-icons(3em);
     }
   });
+
+  .size-icons(20vh);
 }
 </style>
