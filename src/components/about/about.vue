@@ -105,6 +105,29 @@
 
     <Divider />
 
+    <div class="site">
+      <h1>About this Site</h1>
+      <p>
+        This site was built by hand using
+        <a href="https://vuejs.org/">Vue.js</a>, and
+        <a href="https://vuex.vuejs.org/">Vuex</a>. It uses Vue's single-file
+        components via <a href="https://webpack.js.org/">WebPack</a>, and
+        <a href="https://vue-loader.vuejs.org/">vue-loader</a>.
+      </p>
+      <p>
+        The page slide transitions are handled by a custom
+        <a href="https://github.com/geekytime/vuex-router">vuex-router</a>
+        module that I created to help Vuex apps move their location state into
+        the store.
+      </p>
+      <p>
+        The source code for the site is licensed under the MIT license, and
+        can be <a href="https://github.com/geekytime/jaynes.me">found on Github</a>.
+      </p>
+    </div>
+
+    <Divider />
+
     <AboutFooter />
 
     <Footer />
@@ -140,7 +163,7 @@ export default {
     color: @pcd3;
   }
 
-  & > .background, .philosophy, .technology, .about-footer {
+  & > .background, .philosophy, .technology, .site, .about-footer {
     margin: 0 auto;
     max-width: 35em;
     padding-left: 1em;
