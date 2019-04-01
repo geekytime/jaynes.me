@@ -2,6 +2,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const htmlWebpackTemplate = require("html-webpack-template")
 const path = require("path")
+const VueLoaderPlugin = require("vue-loader/lib/plugin")
 
 const links = [
   "https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800,900",
@@ -63,6 +64,7 @@ module.exports = {
     }
   },
   plugins: [
+    new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
       template: htmlWebpackTemplate,
       title: "Chris - Home",
