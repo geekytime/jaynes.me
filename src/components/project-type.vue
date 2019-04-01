@@ -19,6 +19,9 @@
     <h2>Personal</h2>
     <img src="/job-icons/personal.svg" />
   </div>
+  <div v-else-if="this.type === `infoarmor`" class="type" :class="type">    
+    <img src="/job-icons/infoarmor.svg" />
+  </div>
 
 </template>
 

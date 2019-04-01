@@ -11,11 +11,12 @@
 
 <script>
 const noIcons = ["websockets", "watch", "vuex", "c#", "flux", "webdriverjs"]
+const pngIcons = ["tape", "vue", "mobx"]
 
 export default {
   methods: {
     imgSrc (tech) {
-      if (tech === "tape" || tech === "vue"){
+      if (pngIcons.includes(tech)){
         return `/techs/${tech}.png`
       }
       return `/techs/${tech}.svg`

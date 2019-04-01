@@ -1,10 +1,35 @@
 export default [{
+  id: "lightboard",
+  year: 2019,
+  type: "opensource",
+  name: "lightboard",
+  techs: ["vue", "vuex", "less", "webpack"],
+  description: "A touch-sensitive light-board, inspired by an interactive table my kids saw at a restaurant.",
+  links: [{
+    to: "https://geekytime.github.io/lightboard/vue-demo/",
+    text: "demo"
+  }, {
+    to: "https://github.com/geekytime/lightboard",
+    text: "View Source"
+  }]
+}, {
+  id: "privacy-armor",
+  year: 2019,
+  type: "infoarmor",
+  name:" PrivacyArmor",
+  techs: ["React", "mobx", "Sass", "webpack", "babel"],
+  description: "Personal Privacy Protection, provided by InfoArmor.",
+  links: [{
+    to: "https://www.infoarmor.com/employee-protection-solutions",
+    text: "Product Info"
+  }]
+}, {
   id: "vuex-router",
   year: "2018",
   type: "opensource",
   name: "vuex-router",
   techs: ["vue", "vuex", "less", "webpack", "babel"],
-  description:"Move your app's location state into your Vuex store. Allows super-easy page-based routing with built-in slide transitions. (Used on this site.)",
+  description: "Move your app's location state into your Vuex store. Allows super-easy page-based routing with built-in slide transitions. (Used on this site.)",
   links: [{
     to: "https://github.com/geekytime/vuex-router",
     text:"View Source"

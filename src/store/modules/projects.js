@@ -4,7 +4,7 @@ const state = {
   projects
 }
 
-const featuredIds = ["vuex-router", "count", "tiny-heap", "yocode"]
+const featuredIds = ["lightboard", "privacy-armor", "count", "tiny-heap"]
 
 const getters = {
   featured () {
