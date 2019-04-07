@@ -17,7 +17,7 @@ export default [{
   year: 2019,
   type: "infoarmor",
   name:" PrivacyArmor",
-  techs: ["React", "mobx", "Sass", "webpack", "babel"],
+  techs: ["react", "mobx", "sass", "webpack", "babel"],
   description: "Personal Privacy Protection, provided by InfoArmor.",
   links: [{
     to: "https://www.infoarmor.com/employee-protection-solutions",
@@ -28,7 +28,7 @@ export default [{
   year: 2018,
   type: "onlinelasercutting",
   name: "Laser Cutting Estimator",
-  techs: ["Node"],
+  techs: ["nodejs"],
   description: "LaCE - Estimates laser-cutting time for customer-uploaded SVG files."
 }, {
   id: "vuex-router",
