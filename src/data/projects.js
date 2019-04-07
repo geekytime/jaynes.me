@@ -24,6 +24,13 @@ export default [{
     text: "Product Info"
   }]
 }, {
+  id: "lace",
+  year: 2018,
+  type: "onlinelasercutting",
+  name: "Laser Cutting Estimator",
+  techs: ["Node"],
+  description: "LaCE - Estimates laser-cutting time for customer-uploaded SVG files."
+}, {
   id: "vuex-router",
   year: "2018",
   type: "opensource",
