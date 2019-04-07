@@ -6,7 +6,7 @@ export default [{
   techs: ["vue", "vuex", "less", "webpack"],
   description: "A touch-sensitive light-board, inspired by an interactive table my kids saw at a restaurant.",
   links: [{
-    to: "https://geekytime.github.io/lightboard/vue-demo/",
+    to: "https://geekytime.itch.io/lightboard-vue",
     text: "demo"
   }, {
     to: "https://github.com/geekytime/lightboard",
