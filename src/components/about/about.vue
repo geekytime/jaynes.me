@@ -3,7 +3,7 @@
     <div class="background">
       <h1>My Background</h1>
       <p>
-        I am a professional full-stack software developer with over 17 years of
+        I am a professional full-stack software developer with over 18 years of
         experience. I specialize in building web apps and back-end services, but
         I also love creating games, interactive learning experiences, and other
         educational content.
