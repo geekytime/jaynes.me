@@ -1,4 +1,25 @@
 export default [{
+  id: "portals",
+  year: 2020,
+  type: "pressplay",
+  name: "Pressplay: Portals",
+  techs: ["nodejs", "gcp", "redis"],
+  description: "A 24-hour mini-game experience that awarded cash prizes to winners."
+}, {
+  id: "slots",
+  year: 2020,
+  type: "pressplay",
+  name: "Pressplay: Slots",
+  techs: ["nodejs", "gcp", "websockets", "heroku"],
+  description: "An online slot-machine and skill game that awarded cash prizes to top players."
+}, {
+  id: "levis",
+  year: 2020,
+  type: "levis",
+  name: "Levi Strauss & Co - Various Apps",
+  techs: ["vue", "sass", "nodejs", "aws", "lambda", "cloud-front"],
+  description: "Replaced existing legacy systems with modern web front-ends."
+}, {
   id: "lightboard",
   year: 2019,
   type: "opensource",
@@ -31,38 +52,20 @@ export default [{
   techs: ["nodejs"],
   description: "LaCE - Estimates laser-cutting time for customer-uploaded SVG files."
 }, {
-  id: "vuex-router",
-  year: "2018",
-  type: "opensource",
-  name: "vuex-router",
-  techs: ["vue", "vuex", "less", "webpack", "babel"],
-  description: "Move your app's location state into your Vuex store. Allows super-easy page-based routing with built-in slide transitions. (Used on this site.)",
-  links: [{
-    to: "https://github.com/geekytime/vuex-router",
-    text:"View Source"
-  }]
-},{
   id: "sf-soa",
   year: "2018",
   type: `statefarm`,
   name: `SOA Checkout App`,
   techs: ["react", "redux", "less", "webpack", "nodejs", "postgresql", "websockets"],
   description: "Automated checkout of dependency services for large SOA applications. Invokes services and records uptime metrics."
-},{
+}, {
   id: "count",
   year: "2018",
   type: `qaline`,
   name: `Count`,
   techs: ["react", "redux", "less", "webpack", "nodejs", "postgresql", "websockets"],
   description: "A timer application for food-testing laboratories. Technicians can track multiple timers with visual feedback as deadlines approach."
-},{
-  id: "yocode",
-  year: "2018",
-  type: `personal`,
-  name: `YoCode`,
-  techs: ["vue", "vuex", "less", "webpack", "nodejs", "aws", "lambda", "dynamodb"],
-  description: "Teaches beginners the basics of web programming using simplified versions of HTML, CSS, and JS."
-},{
+}, {
   id: "tiny-heap",
   year: "2017",
   type: `opensource`,
@@ -76,7 +79,7 @@ export default [{
     to: "https://npm.runkit.com/tiny-heap",
     text:"Try It"
   }]
-},{
+}, {
   id: "chippy-sprites",
   year: "2017",
   type: "opensource",
@@ -104,7 +107,7 @@ export default [{
     to: "https://geekytime.itch.io/quiz-blocks",
     text:"Play It"
   }]
-},{
+}, {
   id: "tangrams",
   year: "2016",
   type: "opensource",
@@ -118,14 +121,14 @@ export default [{
     to: "https://geekytime.itch.io/stained-glass-tangrams",
     text:"Try It"
   }]
-},{
+}, {
   id: "sf-mts",
   year: "2016",
   type: "statefarm",
   name: "Massive Test System",
   techs: ["react", "flux", "nodejs", "webpack", "redis", "couchdb", "webdriverjs"],
   description: "Next-level test automation has saved thousands of hours of manual testing. System could generate test data, drive browsers across multiple workstations, and report results with screenshots in a central results repo."
-},{
+}, {
   id: "yola-tg",
   year: "2014",
   type: `yola`,

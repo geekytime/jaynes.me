@@ -10,7 +10,18 @@
 </template>
 
 <script>
-const noIcons = ["websockets", "watch", "vuex", "c#", "flux", "webdriverjs"]
+const noIcons = [
+  "app-engine",
+  "c#",
+  "cloud-front",
+  "cloud-functions",
+  "flux", 
+  "vuex", 
+  "watch", 
+  "webdriverjs", 
+  "websockets"
+]
+
 const pngIcons = ["tape", "vue", "mobx"]
 
 export default {

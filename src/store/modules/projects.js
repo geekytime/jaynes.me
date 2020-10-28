@@ -4,7 +4,7 @@ const state = {
   projects
 }
 
-const featuredIds = ["lightboard", "privacy-armor", "count", "tiny-heap"]
+const featuredIds = ["portals", "slots", "levis", "lightboard", "privacy-armor"]
 
 const getters = {
   featured () {
