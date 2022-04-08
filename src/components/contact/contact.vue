@@ -1,7 +1,6 @@
 <template>
   <div class="contact page">
     <div class="content">
-
       <div class="row">
         <h1 class="email">Email Me</h1>
         <a href="/contact" @click="doEmail">
@@ -26,25 +25,23 @@
 
       <div class="row">
         <h1 class="hire-me">My Resume</h1>
-        <a href="https://bit.do/chrisjaynes">
+        <a href="/resume">
           <Resume />
         </a>
       </div>
-
     </div>
 
     <Footer />
-
   </div>
 </template>
 
 <script>
-import Email from "./icons/email.vue"
-import Footer from "../footer.vue"
-import Github from "./icons/github.vue"
-import LinkedIn from "./icons/linkedin.vue"
-import Resume from "./icons/resume.vue"
-import StackOverflow from "./icons/stack-overflow.vue"
+import Email from './icons/email.vue'
+import Footer from '../footer.vue'
+import Github from './icons/github.vue'
+import LinkedIn from './icons/linkedin.vue'
+import Resume from './icons/resume.vue'
+import StackOverflow from './icons/stack-overflow.vue'
 export default {
   components: {
     Email,
@@ -56,10 +53,13 @@ export default {
   },
   methods: {
     doEmail (event) {
-      const link = document.createElement("a")
-      const email = "em.senyaj@sirhc".split("").reverse().join("")
+      const link = document.createElement('a')
+      const email = 'em.senyaj@sirhc'
+        .split('')
+        .reverse()
+        .join('')
       link.href = `mailto:${email}`
-      link.target = "_blank"
+      link.target = '_blank'
       link.click()
       event.preventDefault()
     }
@@ -68,9 +68,9 @@ export default {
 </script>
 
 <style lang="less">
-@import "../../styles/breaks.less";
-@import "../../styles/colors.less";
-@import "../../styles/flow.less";
+@import '../../styles/breaks.less';
+@import '../../styles/colors.less';
+@import '../../styles/flow.less';
 
 .page.contact {
   .flow-col;
@@ -125,18 +125,9 @@ export default {
     }
   }
 
-  .break480({
-    .content .row {
-      .size-icons(2.5em);
-    }
+  .break480({.content .row {.size-icons(2.5em) ;}});
 
-  });
-
-  .break600({
-    .content .row {
-      .size-icons(3em);
-    }
-  });
+  .break600({.content .row {.size-icons(3em) ;}});
 
   .size-icons(20vh);
 }

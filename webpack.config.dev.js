@@ -1,18 +1,20 @@
 /* eslint-env node */
-var config = require("./webpack.config.js")
-var path = require("path")
-var merge = require("webpack-merge")
+var config = require('./webpack.config.js')
+var path = require('path')
+var merge = require('webpack-merge')
 
 module.exports = merge(config, {
   devServer: {
     inline: true,
-    contentBase: path.join(__dirname, "static"),
-    publicPath: "/",
+    contentBase: path.join(__dirname, 'static'),
+    publicPath: '/',
     disableHostCheck: true,
     port: 4433,
-    host: "0.0.0.0",
-    historyApiFallback: true
+    host: '0.0.0.0',
+    historyApiFallback: {
+      rewrites: [{ from: /^\/resume/, to: '/resume.html' }]
+    }
   },
-  devtool: "eval",
-  mode: "development"
+  devtool: 'eval',
+  mode: 'development'
 })
