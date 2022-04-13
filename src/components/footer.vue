@@ -1,16 +1,15 @@
 <template>
   <footer>
-    ©2018 Chris Jaynes
+    ©2022 Chris Jaynes
   </footer>
 </template>
 
 <script>
-export default {
-}
+export default {}
 </script>
 
 <style lang="less">
-@import "../styles/colors.less";
+@import '../styles/colors.less';
 footer {
   background-color: @pcd3;
   color: white;

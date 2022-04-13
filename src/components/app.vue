@@ -3,7 +3,7 @@
     <Header></Header>
     <Pages>
       <Page name="home">
-        <Home />
+        <About />
       </Page>
       <Page name="about">
         <About />
@@ -25,15 +25,15 @@
 </template>
 
 <script>
-import About from "./about/about.vue"
-import Blog from "./blog.vue"
-import Contact from "./contact/contact.vue"
-import FourZeroFour from "./four-zero-four.vue"
-import Header from "./header.vue"
-import Home from "./home/home.vue"
-import { Page } from "vuex-router"
-import { Pages } from "vuex-router"
-import Projects from "./projects/projects.vue"
+import About from './about/about.vue'
+import Blog from './blog.vue'
+import Contact from './contact/contact.vue'
+import FourZeroFour from './four-zero-four.vue'
+import Header from './header.vue'
+import Home from './home/home.vue'
+import { Page } from 'vuex-router'
+import { Pages } from 'vuex-router'
+import Projects from './projects/projects.vue'
 
 export default {
   components: {
@@ -49,7 +49,7 @@ export default {
   },
   computed: {
     currentPage () {
-      return this.$store.getters["router/currentPage"]
+      return this.$store.getters['router/currentPage']
     }
   },
   watch: {
@@ -63,12 +63,13 @@ export default {
 </script>
 
 <style lang="less">
-@import "../styles/breaks.less";
-@import "../styles/colors.less";
-@import "../styles/reset.less";
-@import "../styles/typography.less";
+@import '../styles/breaks.less';
+@import '../styles/colors.less';
+@import '../styles/reset.less';
+@import '../styles/typography.less';
 
-html, body {
+html,
+body {
   height: 100%;
   background-color: @pcl5;
 }
@@ -77,5 +78,4 @@ html, body {
   height: 100%;
   padding-top: 40px;
 }
-
 </style>

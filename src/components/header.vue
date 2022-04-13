@@ -1,7 +1,6 @@
 <template>
   <header>
     <nav>
-      <HeaderLink name="home" />
       <HeaderLink name="about" />
       <HeaderLink name="projects" />
       <HeaderLink name="contact" />
@@ -10,7 +9,7 @@
 </template>
 
 <script>
-import HeaderLink from "./header-link.vue"
+import HeaderLink from './header-link.vue'
 
 export default {
   components: {
@@ -20,10 +19,10 @@ export default {
 </script>
 
 <style lang="less">
-@import "../styles/breaks.less";
-@import "../styles/colors.less";
-@import "../styles/elevation.less";
-@import "../styles/typography.less";
+@import '../styles/breaks.less';
+@import '../styles/colors.less';
+@import '../styles/elevation.less';
+@import '../styles/typography.less';
 
 header {
   position: fixed;
@@ -44,10 +43,6 @@ header {
     padding-right: 1em;
   }
 
-  .break480({
-    nav {
-      justify-content: center;
-    }
-  });
+  .break480({nav {justify-content: center;}});
 }
 </style>

@@ -17,9 +17,6 @@
           <a href="https://www.linkedin.com/in/chris-jaynes/">
             <LinkedIn />
           </a>
-          <a href="https://stackoverflow.com/cv/christopherjaynes">
-            <StackOverflow />
-          </a>
         </div>
       </div>
 
@@ -39,14 +36,20 @@
 import Email from './icons/email.vue'
 import Footer from '../footer.vue'
 import Github from './icons/github.vue'
+import Link from '../link.vue'
 import LinkedIn from './icons/linkedin.vue'
 import Resume from './icons/resume.vue'
 import StackOverflow from './icons/stack-overflow.vue'
+
+const resumeUrl =
+  'https://docs.google.com/document/d/e/2PACX-1vQJqHmH_e6tStMnLS_LR9VKgYmMWTn43S7nVuTqEvkjt2mE4sLFHphx7Zgo0NKfda-VohMf4jaljz-8/pub'
+
 export default {
   components: {
     Email,
     Footer,
     Github,
+    Link,
     LinkedIn,
     Resume,
     StackOverflow
